@@ -69,7 +69,7 @@
         il lavoro nelle fasi successive. <br>Una fondamentale è stata il fatto che tutti i personaggi dovessero indossare un casco. Questo accorgimento, oltre ad essere
         perfettamente coerente con la narrazione, ci ha risparmiato la necessità di dover animare il volto dei protagonisti. Un’altra scelta che ci ha semplificato
         il lavoro è stata quella dell’ambientazione molto desolata, che ha ridotto il numero di modelli da produrre per popolare i vari ambienti. Questo tuttavia non
-        è per dire che si è scritto con il solo intento di minimizzare le difficoltà, anzi. Il progetto si è rapidamente trasformato il qualcosa di molto più grande
+        è per dire che si è scritto con il solo intento di minimizzare le difficoltà, anzi. Il progetto si è rapidamente trasformato in qualcosa di molto più grande
         di quello che avevamo immaginato inizialmente.
       </p>
       <div style="padding-bottom:5%; position:relative">
@@ -145,7 +145,7 @@
         utilizzato <a href="https://quixel.com/bridge" target="_blank"><u>Quixel Bridge</u></a> per scaricare alcuni modelli per arricchire maggiormente le scene.
         <br>La modellazione del personaggio è iniziata dal casco per poi passare al corpo. E’ stata prima definita l’anatomia
         e poi vi sono stati sovrapposti dei primitivi che facessero da base per la tuta. Le increspature del tessuto sono state ottenute
-        utilizzando il Cloth Brush, disponibile in Blender 2.83 (al tempo in alpha).
+        utilizzando il Cloth Brush, disponibile in Blender 2.83 (al tempo in alpha). Sono stati aggiunti infine il logo e le cuciture della tuta agendo sulle UV map del personaggio, utilizzando questo <a href="https://youtu.be/vJPJIXUkpqY?list=WL" target="_blank"><u>tutorial</u></a>.
       </p>
       <img src="images/personaggio.jpg" class="report_image">
       <img src="images/casco.jpg" class="report_image">
@@ -161,8 +161,8 @@
         <a href="https://texturehaven.com/" target="_blank"><u>texturehaven.com</u></a>, <a href="https://3dtextures.me/" target="_blank"><u>3dtextures.me</u></a>,
         <a href="https://cgbookcase.com/" target="_blank"><u>cgbookcase.com</u></a> e <a href="https://cc0textures.com/" target="_blank"><u>cc0textures.com</u></a>.
         <br>Una particolare necessità che avevamo era quella di realizzare un materiale da utilizzare per il terreno, interamente coperto di cemento.
-        A causa delle enormi dimensioni che spesso doveva avere tutti i materiali che trovavamo apparivano
-        ripetuti in modo molto evidente. Per risolvere il problema...(parte di loca dove spiega il terreno), Aggiungere cuciture!
+        A causa delle enormi dimensioni che spesso doveva avere, tutti i materiali che trovavamo apparivano
+        ripetuti in modo molto evidente. Per risolvere il problema abbiamo mescolato due texture diverse e agito sulla rotazione delle tile e la color variation sulla base di questo <a href="https://youtu.be/-VgtSL5ZpYc" target="_blank"><u>tutorial</u></a>.
       </p>
 
       <!-- 6 Retopology e Rigging -->
@@ -175,7 +175,9 @@
         molto inferiore di poligoni e le facce quadrangolari permettono un'ottima deformazione. L’ultimo passo da compiere è quello di trasferire
         tutti i dettagli andati persi nella semplificazione del modello (soprattutto delle pieghe della tuta), tramite la creazione di una normal map,
         da applicare al nuovo modello. Questa serie di operazioni è stata ripetuta per entrambi i personaggi.<br>
-        Per la creazione del rig del personaggio abbiamo usato l’addon Rigify incluso in Blender. (parte di loca da scrivere)
+        Per la creazione del rig dei personaggi abbiamo usato l’addon Rigify incluso in Blender, servendoci dello Human (Meta Rig). Dopo aver adattato il rig alle fattezze di ciascuno dei due personaggi ed eliminato le ossa non necessarie (facciali e alcune dita delle mani), abbiamo generato il rig.
+        Come ultimo tocco abbiamo portato a zero l'IK Stretch di mani e piedi per evitare un innaturale e non voluto allungamento del personaggio quando si muovono mani e piedi con la cinematica inversa.
+        Per il processo ci siamo serviti del seguente <a href="https://youtu.be/XHa2Y8zjtZQ?list=WL" target="_blank"><u>tutorial</u></a>.
       </p>
       <img src="images/retopo.jpg" class="report_image">
       <img src="images/rig.jpg" class="report_image">
