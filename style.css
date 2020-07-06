@@ -188,7 +188,7 @@ a:active {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  transform: translateY(20px);
+  transform: translateY(100px);
 }
 #autori-arancioni{
   color: #FF4E00;

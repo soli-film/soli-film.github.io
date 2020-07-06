@@ -18,8 +18,12 @@
   <div class="landing-container">
     <h1 id="titolo">SOLi</h1><br>
     <p id="sottotitolo">Una breve storia su degli omini arancioni</p>
-    <div style="padding:56.25% 0 0 0;position:relative;top:30px;transform: translateX(5%)"><iframe src="https://player.vimeo.com/video/253871431?portrait=0" style="position:absolute;top:0;left:0;width:90%;height:90%;" frameborder="0" allow="autoplay; fullscreen"
-        allowfullscreen></iframe>
+    <!-- <div style="padding:56.25% 0 0 0;position:relative;top:30px;transform: translateX(5%)">
+      <iframe src="https://player.vimeo.com/video/253871431?portrait=0" style="position:absolute;top:0;left:0;width:90%;height:90%;" frameborder="0" allow="autoplay;
+      fullscreen" allowfullscreen></iframe>
+    </div> -->
+    <div style="padding:2% 0 0 0;position:relative;top:30px;">
+      <iframe width="1080" height="608" src="https://www.youtube.com/embed/BIEIJevVgVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <script src="https://player.vimeo.com/api/player.js"></script>
     <img src="images/freccia.svg" class="freccia">
@@ -58,7 +62,7 @@
     </div>
     <div class="content" id="center">
       <p style="padding-bottom: 5vh" class="report_paragraph">
-        SOLi è un cortometraggio realizzato con Blender per il corso di Computer Animation tenuto dal professor Edie Miglio e dal tutor Daniele
+        SOLi è un cortometraggio realizzato con Blender per il corso di Computer Animation, tenuto dal professor Edie Miglio e dal tutor Daniele
         Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
 
       </p>
@@ -191,6 +195,9 @@
         nell’Action Editor, ma la maggiorparte necessitavano di essere uniche per soddisfare i bisogni della scena. In alcuni casi, soprattutto per le animazioni della folla,
         abbiamo utilizzato <a href="https://www.mixamo.com/#/" target="_blank"><u>Mixamo</u></a>, un servizio che permette di applicare delle animazioni di ottima fattura
         a dei modelli di personaggi.<br>
+      </p>
+      <img src="images/animazione.jpg" class="immagine_larga"><br>
+      <p class="report_paragraph">
         Per riuscire a collaborare efficentemente tra di noi, abbiamo creato una shot list su un foglio di calcolo Google, in modo da tenere d'occhio chi si stava occupando
         di cosa e quanto lavoro ci fossa ancora da fare.
       </p>
@@ -216,9 +223,10 @@
         Tutto il cortometraggio è stato renderizzato utilizzando il motore di rendering Eevee. Possiamo tranquillamente dire che l’esistenza di Eevee
         è uno dei motivi principali per i cui siamo riusciti a realizzare questo cortometraggio. Sarebbe stato impossibile svilupparlo utilizzando Cycles,
         a causa delle ovvie limitazioni tecniche (abbiamo lavorato su portatili per la maggiorparte del tempo, anche solo attivare la render preview con Cycles
-        spesso causava un immediato crash di Blender). La possibilità di avere una preview (quasi) istantanea della scena renderizzata ci ha permesso di lavorare
-        molto più velocemente e prendere migliori decisioni creative. Ovviamente usare un motore di rendering biased ha anche i suoi lati negativi. Abbiamo dovuto
-        spendere un po’ più di tempo nel trovare la configurazione di luci che potesse rendere credibile e realistica ogni scena.<br>
+        spesso causava un immediato crash di Blender, probabilmente a causa della nebbia). La possibilità di avere una preview istantanea della scena renderizzata ci ha permesso di lavorare
+        molto più velocemente e prendere migliori decisioni creative.
+        <br>Ovviamente usare un motore di rendering biased ha anche i suoi lati negativi. Abbiamo dovuto
+        spendere un po’ più di tempo nel trovare la configurazione di luci che potesse rendere credibile e realistica ogni scena.
         Un problema che subito abbiamo riscontrato è stato il fatto che Eevee non supporta il motion blur legato al movimento
         degli oggetti, ma solo quello derivato dal movimento della telecamera (l'hanno aggiunto con l'alpha di Blender 2.9 a inizio luglio, mannaggia a loro). Il motion blur
         è fondamentale, soprattutto nelle scene con un'azione concitata, per aggiungere quel pizzico di realismo che fa percepire la scena come se fosse girata con una
@@ -235,7 +243,11 @@
         sono mancate alcune modifiche apportate in fase di montaggio, atte soprattutto a dilatare alcuni momenti o azioni. <br>Per quanto
         riguarda il post-processing, è stata effettuata una color correction di alcuni shot per garantire una maggiore consistenza dei colori, è stata aggiunta della grana
         per simulare la pellicola cinematografica ed è stata applicata sia una vignette, per avvicinarsi all’effetto che si otterrebbe utilizzando delle lenti anamorfiche.
-        <br>Una parte di lavoro di cui non avevamo assolutamente previsto la grande quantità di tempo necessaria, è stata la sonorizzazione di tutte le scene (foley). Una buona immagine
+      </p>
+      <img src="images/comparison2.jpg" class="immagine_larga">
+      <br>
+      <p class="report_paragraph">
+        Una parte di lavoro di cui non avevamo assolutamente previsto la grande quantità di tempo necessaria, è stata la sonorizzazione di tutte le scene (foley). Una buona immagine
         risulterà sempre incompleta senza un buon suono che la accompagni. <br>Per gli effetti sonori, oltre a registrarne alcuni noi stessi, abbiamo utilizzato il sito
         <a href="https://freesound.org/" target="_blank"><u>freesound.org</u></a>, che raccoglie una grande quantità di suoni gratuiti.<br>
         Per le musiche abbiamo scelto quasi esclusivamente pezzi suonati con un carillon, che con le sue melodie calde e rassicuranti, contrasta con lo scenario freddo e
