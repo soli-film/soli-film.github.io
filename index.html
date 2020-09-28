@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -12,47 +13,42 @@
 </head>
 
 <body>
-  <!-- <div id = "invisible_box" style="position:relative;top:0; height: 100vh"></div> -->
 
-  <!-- <div class="main-container"> -->
+  <div class="main-container">
   <div class="landing-container">
     <h1 id="titolo">SOLi</h1><br>
-    <p id="sottotitolo">Una breve storia su degli omini arancioni</p>
-    <!-- <div style="padding:56.25% 0 0 0;position:relative;top:30px;transform: translateX(5%)">
-      <iframe src="https://player.vimeo.com/video/253871431?portrait=0" style="position:absolute;top:0;left:0;width:90%;height:90%;" frameborder="0" allow="autoplay;
-      fullscreen" allowfullscreen></iframe>
-    </div> -->
-    <div style="padding:2% 0 0 0;position:relative;top:30px;">
-      <iframe width="1080" height="608" src="https://www.youtube.com/embed/BIEIJevVgVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <img src="images/freccia.svg" class="freccia">
+    <p id="sottotitolo">A 3D animated short film.</p>
+
+    <!-- <div class="video"> -->
+      <iframe src="https://www.youtube.com/embed/BIEIJevVgVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="yt"></iframe>
+    <!-- </div> -->
+    <img src="images/freccia.svg" class="freccia-1">
   </div>
   <div class="fixme">
     <div id="index_sx">
       <h1 class="orangeColor" style="padding-top: 1vw; transform: translateX(20px); letter-spacing: 2px;">SOLi</h1>
       <ol style="padding-top: 19vh" >
-        <li><a href="#Storia" class="menu">Storia</a></li>
+        <li><a href="#Storia" class="menu">Story</a></li>
         <li><a href="#Concept" class="menu">Concept</a></li>
-        <li><a href="#Storyboard_Animatic" class="menu">Storyboard e Animatic</a></li>
-        <li><a href="#Modellazione" class="menu">Modellazione</a></li>
+        <li><a href="#Storyboard_Animatic" class="menu">Storyboard and Animatic</a></li>
+        <li><a href="#Modellazione" class="menu">Modeling</a></li>
         <li><a href="#Shading" class="menu">Shading</a></li>
-        <li><a href="#Retopology_Rigging" class="menu">Retopology e Rigging</a></li>
-        <li><a href="#Animazione" class="menu">Animazione</a></li>
-        <li><a href="#Regia_Fotografia" class="menu">Regia e Fotografia</a></li>
+        <li><a href="#Retopology_Rigging" class="menu">Retopology and Rigging</a></li>
+        <li><a href="#Animazione" class="menu">Animation</a></li>
+        <li><a href="#Regia_Fotografia" class="menu">Directing and Photography</a></li>
         <li><a href="#Rendering" class="menu">Rendering</a></li>
-        <li id="menu-spostato"><a href="#Montaggio_Suono" class="menu">Montaggio e Suono</a></li>
+        <li id="menu-spostato"><a href="#Montaggio_Suono" class="menu">Editing and Sound</a></li>
       </ol>
     </div>
     <div id="authors_dx" style="padding-left: 6vw; padding-right: 3vw">
-      <h1 class="orangeColor" style="padding-top: 1vw">Autori</h1>
+      <h1 class="orangeColor" style="padding-top: 1vw">Made by</h1>
       <div style="padding-top: 19vh">
         <p class="orangeColor autori"><a href="https://lociobello.github.io/Sito-Portfolio/" target="_blank" id="autori-arancioni"><u>Lorenzo Bernini</u></a></p>
-        <p class="autori" style="padding-bottom: 2.5vh">Storia, Regia, Fotografia, Modellazione, Shading, Animazione</p>
+        <p class="autori" style="padding-bottom: 2.5vh">Story, Directing, Cinematography, Modeling, Shading, Animation</p>
         <p class="orangeColor  autori"><a href="https://www.behance.net/gianlucalo9950?tracking_source=search_users_recommended%7Cgianluca%20locatelli" target="_blank" id="autori-arancioni"><u>Gianluca Locatelli</u></a></p>
-        <p class="autori" style="padding-bottom: 2.5vh">Modellazione, Shading, Animazione</p>
+        <p class="autori" style="padding-bottom: 2.5vh">Modeling, Shading, Animation</p>
         <p class="orangeColor  autori"><a href="https://www.behance.net/filippo4te0935" target="_blank" id="autori-arancioni"><u>Filippo Testa</u></a></p>
-        <p class="autori" style="padding-bottom: 2.5vh">Modellazione, Shading, Animazione</p>
+        <p class="autori" style="padding-bottom: 2.5vh">Modeling, Shading, Animation</p>
       </div>
     </div>
   </div>
@@ -62,93 +58,85 @@
     </div>
     <div class="content" id="center">
       <p style="padding-bottom: 5vh" class="report_paragraph">
-        SOLi è un cortometraggio realizzato con Blender per il corso di Computer Animation, tenuto dal professor Edie Miglio e dal tutor Daniele
-        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
-
+        SOLi is a 3D animated short film made in Blender for the Computer Animation class at Politecnico di Milano,
+        BA in Communication Design, during Italy's 2020 lockdown.
       </p>
       <!-- 1. Storia -->
-      <h1 id="Storia" class="report_title orangeColor">1. Storia</h1>
+      <h1 id="Storia" class="report_title orangeColor">1. Story</h1>
       <p class="report_paragraph">
-        Tutto è iniziato con lo sviluppo della sceneggiatura. Durante la scrittura si sono prese una serie di scelte atte a semplificare il più possibile
-        il lavoro nelle fasi successive. <br>Una fondamentale è stata il fatto che tutti i personaggi dovessero indossare un casco. Questo accorgimento, oltre ad essere
-        perfettamente coerente con la narrazione, ci ha risparmiato la necessità di dover animare il volto dei protagonisti. Un’altra scelta che ci ha semplificato
-        il lavoro è stata quella dell’ambientazione molto desolata, che ha ridotto il numero di modelli da produrre per popolare i vari ambienti. Questo tuttavia non
-        è per dire che si è scritto con il solo intento di minimizzare le difficoltà, anzi. Il progetto si è rapidamente trasformato in qualcosa di molto più grande
-        di quello che avevamo immaginato inizialmente.
+        Everything started with the script. During the writing process, a series of choices were made to simplify the work in the subsequent
+        phases as much as possible. One of these was the fact that all characters had to wear a helmet. This trick, in addition to being perfectly
+        consistent with the narrative, has spared us the need to animate the faces of the characters. Another choice that simplified our work was
+        to choose a very desolate setting, which reduced the number of models needed to populate the various environments. However, this is not to
+        say that the short was written with the sole intention of minimizing the difficulties. Despite all of these precautions, in fact, the project
+        quickly turned into something much bigger than we had originally imagined.
       </p>
       <div style="padding-bottom:5%; position:relative">
-        <iframe src="https://drive.google.com/file/d/1mzGpyUehhzERP6ToXbXlFOXTzXwLT_KA/preview" width="100%" height="900" frameborder="0"></iframe>
+        <iframe src="https://drive.google.com/file/d/1mzGpyUehhzERP6ToXbXlFOXTzXwLT_KA/preview" frameborder="0" class="drive"></iframe>
       </div>
 
       <!-- 2. Concept -->
       <h1 id="Concept" class="report_title orangeColor">2. Concept</h1>
       <p class="report_paragraph">
-        Dopo aver finito di scrivere la sceneggiatura abbiamo subito iniziato una fase di brainstorming e raccolta di reference per iniziare a capire
-        quale sarebbe dovuto essere il design dei personaggi. Alla fine abbiamo optato per un mix tra un palombaro ed un astronauta, le cui tute trasmettevano
-        la stessa sensazione di isolamento dal mondo esterno che stavamo cercando. In particolare volevamo mantenere le forme antiquate e non molto funzionali
-        della tuta da palombaro, unite ai materiali della tuta da astronauta, vista anche l’ambientazione in cui si svolge la storia (un futuro indefinito). <br>
-        Fin dall'inizio il colore delle tute dei personaggi è stato l'arancione, per motivazioni principalmente estetiche, poichè garantiva un buon distacco dallo sfondo
-        spesso privo di colori accesi. In aggiunta, l'arancione rimanda anche alla tuta che spesso i carcerati indossano, pricipalmente negli USA.
+        After the story was finished, we quickly started brainstorming and gathering references for what the design of the characters could be.
+        We landed on a mix between an astronaut and a diver. We really loved the analog quality and the sense of oppression of old diving suits
+        and the cleaner shapes and bright colors from the astronauts suits.<br>
+        The orange color for the suits was chosen primarily to contrast the gray background.
+        <br>In addition, the orange also refers to the overalls that prisoners often wear, mainly in the USA.
       </p>
       <img src="images/confronto.jpg" class="immagine_larga">
       <img src="images/concept2.jpg" class="immagine_larga">
       <br>
       <br>
       <p class="report_paragraph">
-        Per il design delle architetture ci siamo ispirati moltissimo alle foto di Bernd e Hilla Becher. La torre di controllo è ispirata ad una
-        loro serie di foto chiamata <i>Torri dell’Acqua</i>, mentre la fabbrica abbandonata alla serie <i>Depositi di
-        Carbone</i>.
+        For the architecture design we drew a lot of inspiration from Bernd and Hilla Becher’s photographs. The Control Tower is inspired by one of their
+        series called <i>Water Towers</i> and the Abandoned Factory from another one called <i>Coal Deposits</i>.
       </p>
       <img src="images/becher1-2.jpg" class="immagine_larga">
       <img src="images/concept1.jpg" class="immagine_larga">
       <br>
       <br>
       <p class="report_paragraph">
-        Un’altra fonte di ispirazione, sia per le architetture che per l'atmosfera, è stata la fotografa Danila Tkachenko, in particolare
-        la sua serie chiamata <a href="http://www.danilatkachenko.com/projects/restricted-areas/" target="_blank"><u><i>Restricted Areas</i></u></a>,
-        che documenta alcuni siti abbandonati costruiti dall’URSS.
+        We also found russian a photographer called Danila Tkachenko whose photos from her series called
+        <a href="http://www.danilatkachenko.com/projects/restricted-areas/" target="_blank"><u><i>Restricted Areas</i></u></a> depicting abandoned Soviet facilities
+        immersed in fog, really fitted our concept for the environment.
       </p>
       <img src="http://www.danilatkachenko.com/storage/media/bezat1/ra18.jpg" title="Quartier generale del partito comunista. Bulgaria, regione dello Yugoiztochen, 2015"
         alt="Quartier generale del partito comunista. Bulgaria, regione dello Yugoiztochen, 2015" class="report_image">
       <img src="http://www.danilatkachenko.com/storage/media/bezat1/ra26.jpg" title="Rovine del sistema laser sperimentale “ZET”. Kazakhstan, regione del Karaganda, 2015"
         alt="Rovine del sistema laser sperimentale “ZET”. Kazakhstan, regione del Karaganda, 2015" class="report_image">
       <p class="report_paragraph">
-        Successivamente, durante lo sviluppo del corto, ci siamo resi conto che avevamo bisogno di qualcosa per rendere più caratteristiche le tute dei personaggi.
-        Abbiamo quindi pensato di inserire una toppa con il logo della compagnia per cui lavorano e quindi abbiamo dovuto creare la compagnia ed il logo.
-        Abbiamo pensato che potesse trattarsi di un azienda russa (il paesaggio era credibile come una futura Russia distopica abbandonata) e l’abbiamo chiamata FuturGas,
-        ispirandoci alle maggiori aziende del paese, che sono appunto dell’industria legata al gas. Il nome è scritto in cirillico, come per tutti i testi dell’interfaccia
-        del casco dei personaggi, cosa che aggiunge un grado di incomprensibilità e mistero in più.
+        Later in development, we realised that we needed something to make the suits more unique, so we thought to add the logo of the company the characters
+        are working for on the chest. We named the company Futurgas, implying that it is an energy corporation specialized in natural gas extraction,
+        and we decided to write it in Cyrillic to give it a weird but belivable look. Also, a dystopian Russian land perfectly fitted the mood we were after.
       </p>
       <img src="images/logo.jpg" class="report_image">
 
       <!-- 3. Storyboard e Animatic -->
-      <h1 id="Storyboard_Animatic" class="report_title orangeColor">3. Storyboard e Animatic</h1>
+      <h1 id="Storyboard_Animatic" class="report_title orangeColor">3. Storyboard and Animatic</h1>
       <p class="report_paragraph">
-        Per avere un’idea migliore di cosa sarebbe dovuto accadere effettivamente a schermo, si è realizzato uno storyboard di tutte le scene.
-        Non è un lavoro tecnicamente molto curato, ma svolge bene il suo lavoro, ossia far capire la composizione
-        delle inquadrature, i movimenti di macchina, la posizione dei personaggi e delle architetture.
+        To get a better sense of what will actually have to happen on screen, we storyboarded every shot. It’s not a very meticulous work,
+        but it perfectly serves the purpose to illustrate the frame composition, the blocking of the characters and the relations to the environment.
       </p>
       <div style="padding-bottom:5%; position:relative">
-        <iframe src="https://drive.google.com/file/d/17DrNTSdYUR7Ayg0vK4DdayabdAIMtnsh/preview" width="100%" height="900" frameborder="0"></iframe>
+        <iframe src="https://drive.google.com/file/d/17DrNTSdYUR7Ayg0vK4DdayabdAIMtnsh/preview" width="100%" height="900" frameborder="0" class="drive"></iframe>
       </div>
       <p class="report_paragraph">
-        All’inizio avevamo in mente di realizzare anche l’animatic dell’intero corto. Alla fine ci siamo resi conto che non ne valeva la pena,
-        poichè avrebbe preso molto tempo e lo storyboard risultava sufficientemente esplicativo. Alla fine abbiamo
-        completato l’animatic solo fino alla scena 7.
+        At the beginning we also developed the animatics for the first scenes, to better understand timing and camera movement.
+        We eventually didn’t realize the animatic for every scene, due to time constraints, and because we realized that for most scenes the storyboard alone was enough.
       </p>
       <div style="padding-top: 56.25%; position:relative">
         <iframe src="https://drive.google.com/file/d/1QiFqGKQpGvJUXnlDES9eYKdkvwmrDxTg/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="report_video"></iframe>
       </div>
 
-      <!-- Modellazione -->
-      <h1 id="Modellazione" class="report_title orangeColor">4. Modellazione</h1>
+      <!-- 4. Modellazione -->
+      <h1 id="Modellazione" class="report_title orangeColor">4. Modeling</h1>
       <p class="report_paragraph">
-        Da subito abbiamo iniziato la modellazione degli edifici (torre di controllo, capannone, fabbrica, casetta container)
-        e degli asset (cassetta degli attrezzi, strumento) che sapevamo sarebbero stati meno impegnativi del personaggio. Abbiamo
-        utilizzato <a href="https://quixel.com/bridge" target="_blank"><u>Quixel Bridge</u></a> per scaricare alcuni modelli per arricchire maggiormente le scene.
-        <br>La modellazione del personaggio è iniziata dal casco per poi passare al corpo. E’ stata prima definita l’anatomia
-        e poi vi sono stati sovrapposti dei primitivi che facessero da base per la tuta. Le increspature del tessuto sono state ottenute
-        utilizzando il Cloth Brush, disponibile in Blender 2.83 (al tempo in alpha). Sono stati aggiunti infine il logo e le cuciture della tuta agendo sulle UV map del personaggio, utilizzando questo <a href="https://youtu.be/vJPJIXUkpqY?list=WL" target="_blank"><u>tutorial</u></a>.
+        We immediately started modeling the buildings (control tower, shed, factory, container house) and the assets (toolbox, tool) that we knew would be
+        less demanding than the character. We used Quixel Bridge to download some models to enrich some environments.
+        The modeling of the character started with the helmet and then moved on to the body. The anatomy was first defined and then some primitives were
+        superimposed to form the basis shape of the suit. The ripples of the fabric were achieved using the Cloth Brush, available in Blender 2.83 (in alpha at the time).
+        <br>The stitchings and the logo were added working on the UV maps of the character, following <a href="https://youtu.be/vJPJIXUkpqY?list=WL" target="_blank"><u>this tutorial</u></a>.
       </p>
       <img src="images/personaggio.jpg" class="report_image">
       <img src="images/casco.jpg" class="report_image">
@@ -159,117 +147,116 @@
       <!-- 5. Shading -->
       <h1 id="Shading" class="report_title orangeColor">5. Shading</h1>
       <p class="report_paragraph">
-        Anche per quanto riguarda la creazione dei materiali ci siamo serviti di Quixel Bridge, che contiene un’ampissima libreria di materiali PBR.
-        Tuttavia abbiamo attinto anche da altre fonti come <a href="https://www.textures.com/" target="_blank"><u>textures.com</u></a>,
+        For the material we heavily relied on Quixel Bridge, which contains a very large library of PBR materials, and on other sources like <a href="https://www.textures.com/" target="_blank"><u>textures.com</u></a>,
         <a href="https://texturehaven.com/" target="_blank"><u>texturehaven.com</u></a>, <a href="https://3dtextures.me/" target="_blank"><u>3dtextures.me</u></a>,
-        <a href="https://cgbookcase.com/" target="_blank"><u>cgbookcase.com</u></a> e <a href="https://cc0textures.com/" target="_blank"><u>cc0textures.com</u></a>.
-        <br>Una particolare necessità che avevamo era quella di realizzare un materiale da utilizzare per il terreno, interamente coperto di cemento.
-        A causa delle enormi dimensioni che spesso doveva avere, tutti i materiali che trovavamo apparivano
-        ripetuti in modo molto evidente. Per risolvere il problema abbiamo mescolato due diverse texture e agito sulla rotazione delle tile e la color variation sulla base di questo <a href="https://youtu.be/-VgtSL5ZpYc" target="_blank"><u>tutorial</u></a>.
+        <a href="https://cgbookcase.com/" target="_blank"><u>cgbookcase.com</u></a> and <a href="https://cc0textures.com/" target="_blank"><u>cc0textures.com</u></a>.
+        A particular need we had was to make a material to use for the ground, entirely made of concrete. Due to the enormous size of it, all the
+        materials we found had very evident repetition problems. To solve this we mixed two different textures and acted on the rotation of the tiles
+        and the color variation based on <a href="https://youtu.be/-VgtSL5ZpYc" target="_blank"><u>this tutorial</u></a>.
       </p>
       <img src="images/terreno_nodi.png" class="immagine_larga">
 
       <!-- 6 Retopology e Rigging -->
-      <h1 id="Retopology_Rigging" class="report_title orangeColor">6. Retopology e Rigging</h1>
+      <h1 id="Retopology_Rigging" class="report_title orangeColor">6. Retopology and Rigging</h1>
       <p class="report_paragraph">
-        Quando abbiamo iniziato a lavorare al progetto in realtà non avevamo nemmeno idea di cosa significasse retopology e nemmeno che ce ne fosse bisogno.
-        Con retopology si intende l’atto di semplificare ed armonizzare la geometria del modello di un personaggio, in modo da renderlo ben deformabile,
-        caratteristica fondamentale per ottenere delle buone animazioni. Dopo varie peripezie per capire come svolgerla, si è trattato di ricostruire il personaggio
-        utilizzando delle facce rettangolari da “appoggiare” sul modello già esistente (con l'aiuto dello shrinkwrap modifier). Il nuovo personaggio, pur avendo le stesse forme di quello vecchio, ha un numero
-        molto inferiore di poligoni e le facce quadrangolari permettono un'ottima deformazione. L’ultimo passo da compiere è quello di trasferire
-        tutti i dettagli andati persi nella semplificazione del modello (soprattutto delle pieghe della tuta), tramite la creazione di una normal map,
-        da applicare al nuovo modello. Questa serie di operazioni è stata ripetuta per entrambi i personaggi.<br>
-        Per la creazione del rig dei personaggi abbiamo usato l’addon Rigify incluso in Blender, servendoci dello Human (Meta Rig). Dopo aver adattato il rig alle fattezze di ciascuno dei due personaggi ed eliminato le ossa non necessarie (facciali e alcune dita delle mani), abbiamo generato il rig.
-        Come ultimo tocco abbiamo portato a zero l'IK Stretch di mani e piedi per evitare un innaturale e non voluto allungamento del personaggio quando si muovono mani e piedi con la cinematica inversa.
-        Per il processo ci siamo serviti del seguente <a href="https://youtu.be/XHa2Y8zjtZQ?list=WL" target="_blank"><u>tutorial</u></a>.
+        When we started working on the project we actually didn't have a clue on what retopology even meant. With retopology (as we discovered) we mean
+        the act of simplifying and harmonizing the geometry of a character's model, so as to make it easily deformable and more suitable for animation.
+        After various ups and downs in trying to understand how to do it, it basically requires to reconstruct the character using rectangular faces,
+        using the existing model as a guide. The new character, despite having the same shapes as the old one, has a much lower number of polygons and
+        the quadrangular faces allow for excellent deformation. The last step is to transfer all the details lost in the simplification of the model
+        (especially for the folds of the suit), by creating a normal map, to be applied to the new model.
+        For the creation of the character rig we used the Rigify addon included in Blender. After adapting the rig to the features of each of the two
+        characters and eliminating the unnecessary bones (facial and some fingers), we generated the rig. Finally, we brought the IK Stretch of hands
+        and feet to zero to avoid unnatural and unwanted stretching of the character when moving hands and feet with the inverse kinematics.
+        For this process we follwed <a href="https://youtu.be/XHa2Y8zjtZQ?list=WL" target="_blank"><u>this tutorial</u></a>.
       </p>
       <img src="images/retopo.jpg" class="report_image">
       <img src="images/rig.jpg" class="report_image">
 
       <!-- 7. Animazione-->
-      <h1 id="Animazione" class="report_title orangeColor">7. Animazione</h1>
+      <h1 id="Animazione" class="report_title orangeColor">7. Animation</h1>
       <p class="report_paragraph">
-        La fase di animazione è stata di gran lunga la più lunga ed impegnativa. In questo caso, il problema non era capire come fare qualcosa tecnicamente
-        (con eccezione del Non Linear Animation Editor, che ad oggi rimane ancora un mistero), ma il tempo che ci voleva per farla. Abbiamo speso più di un
-        mese per animare tutte le azioni dei due personaggi principali e della folla. In rare occasioni siamo stati in grado di riutilizzare delle azioni salvandole
-        nell’Action Editor, ma la maggiorparte necessitavano di essere uniche per soddisfare i bisogni della scena. In alcuni casi, soprattutto per le animazioni della folla,
-        abbiamo utilizzato <a href="https://www.mixamo.com/#/" target="_blank"><u>Mixamo</u></a>, un servizio che permette di applicare delle animazioni di ottima fattura
-        a dei modelli di personaggi.<br>
+        The animation process was by far the longest one. In this case, it wasn’t hard to understand how to achieve what we wanted (although the
+        Non Linear Animation Editor remains a mystery to this day), but it was the time it took, that surprised us. Despite having made a lot of
+        choices during writing, to simplify the action as much as possible, we still ended up with a ton of things to animate. We spent about a
+        month animating all the actions of the two main characters. On rare occasions, we were able to save some time, saving an action in the action
+        editor and reusing it (the walk cycle for example), but most of the time every action in the short needed to be unique. In some cases, especially
+        for crowd animations, we used <a href="https://www.mixamo.com/#/" target="_blank"><u>Mixamo</u></a>, a service that allows you to download well-made
+        mocap animations for free.<br>
       </p>
       <img src="images/animazione.jpg" class="immagine_larga"><br>
       <p class="report_paragraph">
-        Per riuscire a collaborare efficentemente tra di noi, abbiamo creato una shot list su un foglio di calcolo Google, in modo da tenere d'occhio chi si stava occupando
-        di cosa e quanto lavoro ci fossa ancora da fare.
+        To collaborate more efficiently with each other, we created a shot list on a Google spreadsheet, in order to keep an eye on who was doing what
+        and how much work was still left to do.
       </p>
       <img src="images/excel.jpg" class="report_image">
 
       <!-- 8. Regia e Fotografia-->
-      <h1 id="Regia_Fotografia" class="report_title orangeColor">8. Regia e Fotografia</h1>
+      <h1 id="Regia_Fotografia" class="report_title orangeColor">8. Directing and Cinematography</h1>
       <p class="report_paragraph">
-        La regia impiegata per il corto sottolinea l’isolamento dei personaggi, facendoli apparire spesso piccolissimi e molto distanti gli uni tra gli altri.
-        I movimenti di macchina sono minimi per quasi tutto il corto. Nel finale questo cambia, con l’introduzione di riprese che simulano la camera a mano,
-        ottenuta agendo con il Noise modifier nel Graph Editor della camera. L’aspect ratio utilizzato è 2,4:1 (1920 x 800 pixel) ed è stato scelto per mettere
-        in risalto la vastità degli ambienti e per conferire un aspetto più cinematografico. <br>
-        Le scelte di illuminazione negli ambienti esterni sono state influenzate dalla presenza della nebbia volumetrica, che amplifica e diffonde ogni fonte luminosa.
-        La nebbia è contenuta all'interno di un grandissimo cubo ed è realizzata tramite il mix di due materiali Principled Volume, uno per una nebbia più rarefatta ad
-        alta quota ed uno per una più densa, vicino al terreno.<br>
-        Per la realizzazione del sole nelle scene al tramonto, non si è utilizzata la Sun Light, che non garantiva la presenza del disco solare, ma una Spot Light
-        ad altissima intensità.
+        The cinematography highlights the isolation of the characters, often making them appear very small and very distant from each other.
+        Camera movements are very limited for most of the short. The aspect ratio used is 2,4:1 (1920x800) and was chosen to highlight the vastness
+        of the environments and to have a more cinematic look.
+        The lighting choices in outdoor environments were influenced by the presence of the volumetric fog, which amplifies and diffuses each light source.
+        The fog is contained within a very large cube domain and is obtained through a mix of two Principled Volume materials, one for a more rarefied
+        fog at high altitude and one for a denser one, close to the ground. For the realization of the sun in the sunset scenes, it was used a very
+        bright Spot Light instead of the usual Sun Light, which did not guarantee the presence of the solar disk.
       </p>
 
       <!-- 9. Rendering-->
       <h1 id="Rendering" class="report_title orangeColor">9. Rendering</h1>
       <p class="report_paragraph">
-        Tutto il cortometraggio è stato renderizzato utilizzando il motore di rendering Eevee. Possiamo tranquillamente dire che l’esistenza di Eevee
-        è uno dei motivi principali per i cui siamo riusciti a realizzare questo cortometraggio. Sarebbe stato impossibile svilupparlo utilizzando Cycles,
-        a causa delle ovvie limitazioni tecniche (abbiamo lavorato su portatili per la maggiorparte del tempo, anche solo attivare la render preview con Cycles
-        spesso causava un immediato crash di Blender, probabilmente a causa della nebbia). La possibilità di avere una preview istantanea della scena renderizzata ci ha permesso di lavorare
-        molto più velocemente e prendere migliori decisioni creative.
-        <br>Ovviamente usare un motore di rendering biased ha anche i suoi lati negativi. Abbiamo dovuto
-        spendere un po’ più di tempo nel trovare la configurazione di luci che potesse rendere credibile e realistica ogni scena.
-        Un problema che subito abbiamo riscontrato è stato il fatto che Eevee non supporta il motion blur legato al movimento
-        degli oggetti, ma solo quello derivato dal movimento della telecamera (l'hanno aggiunto con l'alpha di Blender 2.9 a inizio luglio, mannaggia a loro). Il motion blur
-        è fondamentale, soprattutto nelle scene con un'azione concitata, per aggiungere quel pizzico di realismo che fa percepire la scena come se fosse girata con una
-        telecamera reale. Fortunatamente esiste un add-on per risolvere questo problema, che però abbiamo deciso di utilizzare solo quando era veramente necessario,
-        poiché incrementa i tempi di rendering.
+        All the shots were rendered using the Eevee rendering engine, one of the new features of Blender 2.8. We can easily say that this rendering engine
+        is one of the main reasons we were able to make this film. It would have been unthinkable to develop it using Cycles, because of our obvious
+        technical limitations (we mostly worked on laptops). The possibility of having an (almost) instantaneous preview of the rendered view allowed
+        us to work faster and take better creative decisions. On the other hand, using a biased rendering engine meant having to spend time on backing
+        indirect lighting and doing all sorts of little cheats here and there, to make the shots feel realistic.
+        One of the problems we soon realised was that (as of summer 2020) Eevee does not support object driven motion blur, but only camera motion blur.
+        Motion blur is essential (especially in action scenes) to add that bit of realism that makes a scene feel like it was shot on a real camera.
+        Fortunately we found an add-on that allows Eevee to render object motion blur, but since it requires a lot more render time, we decided to use it only
+        when the scene really required it.
       </p>
       <img src="images/1540.png" class="immagine_larga">
 
       <!-- 10. Montaggio e Suono-->
-      <h1 id="Montaggio_Suono" class="report_title orangeColor">10. Montaggio e Suono</h1>
+      <h1 id="Montaggio_Suono" class="report_title orangeColor">10. Editing and Sound</h1>
       <p class="report_paragraph">
-        La fase di montaggio è stata più un assemblamento di parti che un vero processo creativo, poichè praticamente tutte le scelte di tempo
-        e ritmo erano state precedentemente calcolate, per evitare di sprecare tempo nel realizzare scene che poi avrebbero rischiato di essere tagliate. Tuttavia non
-        sono mancate alcune modifiche apportate in fase di montaggio, atte soprattutto a dilatare alcuni momenti o azioni. <br>Per quanto
-        riguarda il post-processing, è stata effettuata una color correction di alcuni shot per garantire una maggiore consistenza dei colori, è stata aggiunta della grana
-        per simulare la pellicola cinematografica ed è stata applicata sia una vignette, per avvicinarsi all’effetto che si otterrebbe utilizzando delle lenti anamorfiche.
+        The editing phase was more an assembly of parts than a creative process, as most of the choices of timing and rhythm had been previously
+        calculated in order to avoid wasting time in creating scenes that would have risked being cut. <br>As for the post-processing, grain was added
+        to simulate film and a slight distortion of the image was added in order to get closer to the effect that would be obtained using anamorphic lenses.
       </p>
       <img src="images/comparison2.jpg" class="immagine_larga">
       <br>
       <p class="report_paragraph">
-        Una parte di lavoro di cui non avevamo assolutamente previsto la grande quantità di tempo necessaria, è stata la sonorizzazione di tutte le scene (foley). Una buona immagine
-        risulterà sempre incompleta senza un buon suono che la accompagni. <br>Per gli effetti sonori, oltre a registrarne alcuni noi stessi, abbiamo utilizzato il sito
-        <a href="https://freesound.org/" target="_blank"><u>freesound.org</u></a>, che raccoglie una grande quantità di suoni gratuiti.<br>
-        Per le musiche abbiamo scelto quasi esclusivamente pezzi suonati con un carillon, che con le sue melodie calde e rassicuranti, contrasta con lo scenario freddo e
-        desolato.
+        A part of the work that we hadn't foreseen at all for the amount of time required was the soundtracking of all the scenes (foley).
+        For the sound effects, in addition to recording some of them ourselves, we used <a href="https://freesound.org/" target="_blank"><u>freesound.org</u></a>, which collects a large amount of free sounds.
+        For the music we have chosen almost exclusively pieces played by a carillon, which contrasts the cold and desolate scenario with its warm
+        and reassuring melodies.
       </p>
       <img src="images/premiere.jpg" class="report_image" style = "padding-bottom: 35vh">
 
-      <span style="font-size: 20px; text-align: center; transform: translateY(-200px)">&#128075;</span>
+      <div id="authors_bottom">
+        <h1 class="orangeColor centrato">Made by<br><br></h1>
+        <div>
+          <p class="orangeColor autori"><a href="https://lorenzo-bernini.com/" target="_blank" id="autori-arancioni"><u>Lorenzo Bernini</u></a></p>
+          <p class="autori" style="padding-bottom: 2.5vh">Story, Directing, Cinematography, <br>Modeling, Shading, Animation</p>
+          <p class="orangeColor  autori"><a href="https://www.behance.net/gianlucalo9950?tracking_source=search_users_recommended%7Cgianluca%20locatelli" target="_blank" id="autori-arancioni"><u>Gianluca Locatelli</u></a></p>
+          <p class="autori" style="padding-bottom: 2.5vh">Modeling, Shading, Animation</p>
+          <p class="orangeColor  autori"><a href="https://www.behance.net/filippo4te0935" target="_blank" id="autori-arancioni"><u>Filippo Testa</u></a></p>
+          <p class="autori" style="padding-bottom: 2.5vh">Modeling, Shading, Animation</p>
+        </div>
+      </div>
 
-      <p style = "width: 100%; padding-bottom: 3vh; font-size: 0.8vw; text-align: center; color: #FF4E00;">
+      <span class="manina">&#128075;</span>
+
+      <p class="madeby">
         2020 — Lorenzo Bernini (design), Gianluca Locatelli (coding).
       </p>
 
 
-
-
-    </div>
-    <div class="content" id="dx">
-      <!-- <h1 id="piccolo">Autori</h1> -->
     </div>
   </div>
-  <!-- </div> -->
+  </div>
 
 </body>
 
@@ -289,6 +276,7 @@
       });
     }
   });
+
 </script>
 
 </html>
