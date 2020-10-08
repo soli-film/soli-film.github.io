@@ -177,7 +177,6 @@ a:active {
   width: 100%;
 }
 .report_video {
-  /* padding-top: 5vh; */
   position: absolute;
   top:0;
   width: 100%;
@@ -274,6 +273,7 @@ a:active {
     text-align: center;
     padding-bottom: 20px;
   }
+
   #index_sx {
     display: none;
   }
