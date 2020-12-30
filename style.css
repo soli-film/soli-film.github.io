@@ -22,7 +22,7 @@ h1{
 }
 h2{
   font-size: 18px;
-  font-weight: bold;
+  font-weight: normal;
 }
 p{
   font-size: 20px;
@@ -224,7 +224,9 @@ a:active {
 #autori-arancioni{
   color: #FF4E00;
 }
-
+#grasso{
+  font-weight: bold;
+}
 /*------ MEDIA-QUERIES --------------------------------*/
 
 @media (max-width: 768px){
